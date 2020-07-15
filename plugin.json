@@ -3,6 +3,6 @@
   "title": "Bigfoot",
   "description": "Adds Bigfoot.js to your Micro.blog theme.",
   "includes": [
-    "/bigfoot.html"
+    "bigfoot.html"
   ]
 }
