@@ -1,0 +1,3 @@
+[submodule "static/bigfoot"]
+	path = static/bigfoot
+	url = https://github.com/lemonmade/bigfoot

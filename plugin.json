@@ -1,0 +1,8 @@
+{
+  "version": "1.0.0",
+  "title": "Bigfoot",
+  "description": "Adds Bigfoot.js to your Micro.blog theme.",
+  "includes": [
+    "/bigfoot.html"
+  ]
+}
