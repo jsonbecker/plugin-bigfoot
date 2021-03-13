@@ -1,6 +1,15 @@
 <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
 <script type="text/javascript" src="{{ "assets/bigfoot/dist/bigfoot.min.js" | relURL }}"></script>
-<link rel="stylesheet" type="text/css" href="{{ "assets/bigfoot/dist/bigfoot-number.css" | relURL }}" />
+<link rel="stylesheet" type="text/css" href="
+                      {{ if params.use_numbers }}
+                        {{ "assets/bigfoot/dist/bigfoot-number.css" | relURL }}
+                      {{ else }}
+                        {{ "assets/bigfoot/dist/bigfoot-base.css" | relURL}} 
+                        {{ end }}" />
 <script type="text/javascript">
-    $.bigfoot();
+  $.bigfoot(
+    {
+      numberResetSelector: {{ params.post_separator }}
+    }
+  );
 </script>

@@ -1,8 +1,19 @@
 {
-  "version": "1.0.0",
+  "version": "1.0.1",
   "title": "Bigfoot",
   "description": "Adds Bigfoot.js to your Micro.blog theme.",
   "includes": [
     "bigfoot.html"
+  ]
+  "fields": [
+    {
+      "field": "params.post_separator",
+      "label": "What CSS selector separates out posts on your index pages (to force numbers to restart correctly)?"
+      "placeholder": "article.h-entry"
+    }
+    {
+      "field": "params.use_numbers",
+      "label: "Use numbers?" 
+      "type": "boolean"
   ]
 }
