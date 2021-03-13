@@ -15,5 +15,6 @@
       "field": "params.use_numbers",
       "label": "Use numbers?", 
       "type": "boolean"
+    }
   ]
 }
