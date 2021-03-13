@@ -1,7 +1,7 @@
 <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
 <script type="text/javascript" src="{{ "assets/bigfoot/dist/bigfoot.min.js" | relURL }}"></script>
 <link rel="stylesheet" type="text/css" href="
-                      {{ if params.use_numbers }}
+                      {{ if .Site.Params.use_numbers }}
                         {{ "assets/bigfoot/dist/bigfoot-number.css" | relURL }}
                       {{ else }}
                         {{ "assets/bigfoot/dist/bigfoot-base.css" | relURL}} 
@@ -9,7 +9,7 @@
 <script type="text/javascript">
   $.bigfoot(
     {
-      numberResetSelector: {{ params.post_separator }}
+      numberResetSelector: {{ .Site.Params.post_separator }}
     }
   );
 </script>
