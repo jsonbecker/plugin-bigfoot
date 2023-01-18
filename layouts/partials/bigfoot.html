@@ -1,12 +1,14 @@
 <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
-<script type="text/javascript" src="{{ "assets/bigfoot/dist/bigfoot.min.js" | relURL }}"></script>
-<link rel="stylesheet" type="text/css" href="
-                      {{ if .Site.Params.use_numbers }}
-                        {{ "assets/bigfoot/dist/bigfoot-number.css" | relURL }}
-                      {{ else }}
-                        {{ "assets/bigfoot/dist/bigfoot-default.css" | relURL}} 
-                      {{ end }}" />
-<script type="text/javascript">
+<script src="{{ "assets/bigfoot/dist/bigfoot.min.js" | relURL }}"></script>
+<link rel="stylesheet" 
+      type="text/css" href="
+      {{ if .Site.Params.use_numbers }}
+        {{ "assets/bigfoot/dist/bigfoot-number.css" | relURL }}
+      {{ else }}
+        {{ "assets/bigfoot/dist/bigfoot-default.css" | relURL}} 
+      {{ end }}" 
+>
+<script>
   $.bigfoot(
     {
       numberResetSelector: {{ .Site.Params.post_separator }}
